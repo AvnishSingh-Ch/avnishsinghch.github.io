@@ -499,6 +499,138 @@ h3.my-profession {
   line-height: 40px;
 }
 
+/* About End */
+
+/* Skills Section Start */
+.skills .skills-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.skills .skills-content .skills-category {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.skills .skills-content .skills-category h3 {
+  font-size: 20px;
+  color: var(--text-black-900);
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.skills .skills-content .skills-category h3::after {
+  content: "";
+  height: 2px;
+  width: 50px;
+  background: var(--skin-color);
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
+}
+
+.skills .skills-content .skills-category .tools-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills .skills-content .skills-category .tools-list li {
+  background: var(--bg-black-100);
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--skin-color);
+}
+
+.skills .skills-content .skills-category .tools-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.skills .skills-content .skills-category .tools-list li i {
+  color: var(--skin-color);
+  margin-right: 10px;
+  font-size: 18px;
+  width: 20px;
+}
+
+.skills .skills-content .skills-category .tools-list li {
+  font-size: 16px;
+  color: var(--text-black-700);
+  font-weight: 500;
+}
+
+/* Skills Section End */
+
+/* Projects Section Start */
+.projects .project-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  margin-bottom: 30px;
+}
+
+.projects .project-item .project-item-inner {
+  background: var(--bg-black-100);
+  border: 1px solid var(--bg-black-50);
+  border-radius: 10px;
+  padding: 30px 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects .project-item .project-item-inner:hover {
+  box-shadow: 0 6px 25px var(--skin-color);
+  transform: translateY(-5px);
+}
+
+.projects .project-item .project-item-inner h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: var(--text-black-900);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.projects .project-item .project-item-inner p {
+  font-size: 16px;
+  color: var(--text-black-700);
+  line-height: 25px;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.projects .project-item .project-item-inner .project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.projects .project-item .project-item-inner .project-tech span {
+  background: var(--skin-color);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Projects Section End */
+
+/* Education Timeline Styles */
 .about .about-content .education,
 .about .about-content .experience {
   flex: 0 0 50%;
@@ -544,7 +676,7 @@ h3.my-profession {
   height: 100%;
   left: 7px;
   top: 0;
-  background-color: var(--skin-color);
+  background: var(--skin-color);
 }
 
 .about .about-content .timeline .circle-dot {
@@ -554,12 +686,12 @@ h3.my-profession {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  background-color: var(--skin-color);
+  background: var(--skin-color);
 }
 
 .about .about-content .timeline .timeline-date {
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
   margin-bottom: 12px;
   color: var(--text-black-700);
 }
@@ -583,21 +715,19 @@ h3.my-profession {
   color: var(--text-black-700);
 }
 
-/* About End */
-
-/* Education Start */
+/* Education Section */
 .education .container {
-  padding-bottom: 40px;
+  padding-top: 80px;
 }
 
 .education .education-item {
+  margin-bottom: 30px;
   flex: 0 0 33.33%;
   max-width: 33.33%;
-  margin-bottom: 30px;
 }
 
 .education .education-item .education-item-inner {
-  background-color: var(--bg-black-100);
+  background: var(--bg-black-100);
   border: 1px solid var(--bg-black-50);
   border-radius: 10px;
   padding: 30px 15px;
@@ -606,32 +736,32 @@ h3.my-profession {
 }
 
 .education .education-item .education-item-inner:hover {
-  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+  box-shadow: 0 6px 25px var(--skin-color);
 }
 
 .education .education-item .education-item-inner .icon {
   height: 60px;
   width: 60px;
-  border-radius: 50%;
+  background: var(--skin-color);
   display: block;
   margin: 0 auto 30px;
   text-align: center;
+  border-radius: 50%;
   transition: all 0.3s ease;
 }
 
 .education .education-item .education-item-inner .icon .fa {
-  font-size: 40px;
+  font-size: 25px;
   line-height: 60px;
-  color: var(--skin-color);
+  color: white;
 }
 
 .education .education-item .education-item-inner:hover .icon {
-  background: var(--skin-color);
+  background: white;
 }
 
 .education .education-item .education-item-inner:hover .icon .fa {
-  font-size: 25px;
-  color: white;
+  color: var(--skin-color);
 }
 
 .education .education-item .education-item-inner h4 {
@@ -648,6 +778,7 @@ h3.my-profession {
   line-height: 25px;
 }
 
+/* Education & Experience Container Styles */
 .education .container .education,
 .education .container .experience {
   flex: 0 0 50%;
@@ -668,7 +799,7 @@ h3.my-profession {
 }
 
 .education .container .timeline {
-  background: rgba(0, 0, 0, 0.795);
+  background: var(--bg-black-100);
   padding: 30px 15px;
   border: 1px solid var(--bg-black-50);
   border-radius: 10px;
@@ -693,7 +824,7 @@ h3.my-profession {
   height: 100%;
   left: 7px;
   top: 0;
-  background-color: var(--skin-color);
+  background: var(--skin-color);
 }
 
 .education .container .timeline .circle-dot {
@@ -703,12 +834,12 @@ h3.my-profession {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  background-color: var(--skin-color);
+  background: var(--skin-color);
 }
 
 .education .container .timeline .timeline-date {
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
   margin-bottom: 12px;
   color: var(--text-black-700);
 }
@@ -731,8 +862,6 @@ h3.my-profession {
   text-align: justify;
   color: var(--text-black-700);
 }
-
-/* Education End */
 
 /* Contact Start */
 .contact-title {
@@ -802,13 +931,8 @@ h3.my-profession {
 .contact .contact-form .form-item .form-control {
   width: 100%;
   height: 50px;
-}
-
-.contact .contact-form .form-item .form-control {
-  width: 100%;
-  height: 50px;
   border-radius: 25px;
-  background: rgba(0, 0, 0, 0.795);
+  background: var(--bg-black-100);
   border: 1px solid var(--bg-black-50);
   padding: 10px 25px;
   font-size: 16px;
@@ -831,10 +955,10 @@ h3.my-profession {
 
 /* Contact End */
 
-/* Device Responsive Start */
+/* Responsive */
 @media (max-width: 1190px) {
   .aside {
-    left: -270px;
+    left: -230px;
   }
 
   .aside.open {
@@ -862,9 +986,8 @@ h3.my-profession {
 
 @media (max-width: 990px) {
   .contact .contact-info-item,
-  .blog .blog-item,
-  .experience .experience-item,
-  .education .education-item {
+  .projects .project-item,
+  .skills .skills-content .skills-category {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -882,39 +1005,39 @@ h3.my-profession {
 @media (max-width: 760px) {
   .contact .contact-form .col-6,
   .contact .contact-info-item,
-  .blog .blog-item,
-  .experience .experience-item,
-  .education .education-item,
-  .about .about-content .education,
+  .projects .project-item,
+  .skills .skills-content .skills-category,
   .about .about-content .experience,
+  .about .about-content .education,
   .about .about-content .skills,
-  .about .about-content .personal-info {
+  .about .about-content .personal-info,
+  .education .container .education,
+  .education .container .experience {
     flex: 0 0 100%;
     max-width: 100%;
   }
 
   .btn {
-    padding: 10px 20px;
+    margin-bottom: 10px;
   }
 }
 
 @media (max-width: 416px) {
   h3.hello {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   h3.my-profession {
-    font-size: 25px;
+    font-size: 26px;
   }
 
   .home-info p {
     font-size: 18px;
+    margin-bottom: 50px;
   }
 }
 
-/* Device Responsive End */
-
-/* Animation */
+/* Animations */
 @keyframes slideTop {
   0% {
     opacity: 0;
@@ -923,7 +1046,7 @@ h3.my-profession {
 
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0px);
   }
 }
 
@@ -935,7 +1058,7 @@ h3.my-profession {
 
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0px);
   }
 }
 
@@ -947,14 +1070,14 @@ h3.my-profession {
 
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0px);
   }
 }
 
 @keyframes zoomIn {
   0% {
     opacity: 0;
-    transform: scale(0);
+    transform: scale(0.5);
   }
 
   100% {
@@ -964,22 +1087,19 @@ h3.my-profession {
 }
 
 @keyframes floatImage {
-  0% {
-    transform: translateY(0);
+  0%,
+  100% {
+    transform: translateY(0px);
   }
 
   50% {
-    transform: translateY(-24px);
-  }
-
-  100% {
-    transform: translate(0);
+    transform: translateY(-22px);
   }
 }
 
 @keyframes circleRotate {
   0% {
-    transform: rotate(0);
+    transform: rotate(0deg);
   }
 
   100% {
@@ -991,6 +1111,7 @@ h3.my-profession {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
